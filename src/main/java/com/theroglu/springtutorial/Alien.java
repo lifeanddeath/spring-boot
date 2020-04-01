@@ -1,12 +1,19 @@
 package com.theroglu.springtutorial;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(value="prototype")
 public class Alien {
 	
 	private int aid;
 	
+	public Alien() {
+		super();
+		System.out.println("object created");
+	}
+
 	private String aname;
 	
 	private String tech;
