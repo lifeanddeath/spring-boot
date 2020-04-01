@@ -1,10 +1,9 @@
 package com.theroglu.springtutorial;
 
-import org.springframework.context.annotation.Scope;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value="prototype")
 public class Alien {
 	
 	private int aid;
@@ -13,6 +12,7 @@ public class Alien {
 	
 	private String tech;
 	
+	@Autowired
 	private Laptop laptop;
 
 	public Alien() {

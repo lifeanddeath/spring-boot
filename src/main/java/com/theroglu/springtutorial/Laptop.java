@@ -1,5 +1,8 @@
 package com.theroglu.springtutorial;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Laptop {
 	private int lid;
 	private String brand;
