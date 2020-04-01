@@ -31,4 +31,8 @@ public class Alien {
 	public void setTech(String tech) {
 		this.tech = tech;
 	}
+	
+	public void show() {
+		System.out.println("in show");
+	}
 }
